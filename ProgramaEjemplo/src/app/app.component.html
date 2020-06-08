@@ -1,0 +1,59 @@
+<!-- Directica ngIf
+
+<h1 class="container bg-dark text-white text-center my-4 py-4">ngIf show={{show}}</h1>
+<div class="container">
+    <button class="btn btn-warning" (click)="show=!show">Acción</button>
+    <p class="text-info" *ngIf="show; else showDos">Muestra de texto
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa laudantium, sed quo exercitationem veritatis, fugit, autem delectus mollitia dolore rem aperiam velit ab aut consectetur animi distinctio quos voluptatum! Earum!
+      Es verdadero
+    </p>
+
+    <ng-template #showDos>
+        <p class="text-danger">Muestra de texto 2
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id molestias consequatur provident libero ducimus harum fugit voluptas, animi dolores suscipit quae sed culpa dicta. Facilis quasi incidunt repudiandae pariatur voluptas!
+          Es falso</p>
+    </ng-template>
+</div>-->
+
+<!-- Directiva ngFor -->
+<!--<h1 class="container bg-dark text-white text-center my-4 py-4">[ngFor]</h1>
+<div class="container">-->
+
+
+  <!-- <ul>
+        <li *ngFor="let curso of cursos">{{curso}}</li>
+    </ul>-->
+<!--<table class="table">
+        <thead>
+            <th scope="col">#</th>
+            <th scope="col">TIPO</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">EDAD</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let animal of animales; index as i">
+                <th scope="row">{{i}}</th>
+                <td>{{animal.tipo}}</td>
+                <td>{{animal.nombre}}</td>
+                <td>{{animal.edad}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>-->
+
+<h1 class="container bg-dark text-white text-center my-4 py-4">[ngClass]</h1>
+
+<div class="container">
+<button class="btn btn-dark mb-3 mr-2" (click)="activo = 'primero'">Primero</button>
+<button class="btn btn-danger mb-3" (click)="activo = 'segundo'">Segundo</button>
+
+<p class="text-info d-none" [ngClass]="{'d-block':activo=='primero'}">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut perspiciatis dignissimos corporis, fugit quas repellat aliquid numquam iure earum quasi vero culpa officiis fuga repudiandae, facere officia error eius?
+</p>
+
+<p class="text-danger d-none" [ngClass]="{'d-block':activo=='segundo'}">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quibusdam voluptatem, rerum accusantium animi, obcaecati eum dolore earum, nemo suscipit sint eos fugit. Commodi odit odio at necessitatibus ullam quidem!
+</p>
+
+</div>
